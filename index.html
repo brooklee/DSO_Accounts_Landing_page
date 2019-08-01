@@ -664,7 +664,7 @@
                                 bottom: 0px;
                                 left: 50%;
                                 width: 50%;
-                                max-width: 650px;
+                                max-width: 500px;
                             }
 
                             .pin_bottom {
@@ -672,6 +672,14 @@
                                 bottom: 0px;
                                 
                                 width: 70%;
+                                max-width: 650px;
+                            }
+
+                            .pin_bottom_team {
+                                position: absolute;
+                                bottom: 0px;
+                                left:0;
+                                width: 100%;
                                 max-width: 650px;
                             }
 
@@ -750,11 +758,38 @@
                                 padding-top: 20%;  
                             }
 
+                            .pin_bottom_right {
+                                position: absolute;
+                                bottom: 0px;
+                                left: 40%;
+                                width: 70%;
+                                max-width: 600px;
+                            }
+
                             }
 
                             @media screen and (min-width: 850px) {
                                 .video-outer-wrapper {
                                     margin: 75px auto 75px
+                                    
+                                }
+
+                                .pin_bottom_right {
+                                position: absolute;
+                                bottom: 0px;
+                                left: 40%;
+                                width: 70%;
+                                max-width: 600px;
+                            }
+                            }
+
+                            @media screen and (min-width: 850px) {
+                                .pin_bottom_right {
+                                position: absolute;
+                                bottom: 0px;
+                                left: 40%;
+                                width: 70%;
+                                max-width: 800px;
                                 }
                             }
                         </style>
@@ -1017,7 +1052,7 @@
                                             <div class="w-full float-none sm:float-left px-4 pb-0 mx-0 md:hidden"
                                                 style="min-height: 500px;">
                                                 <div>
-                                                    <img class="pin_bottom mx-auto"
+                                                    <img class="pin_bottom_team mx-auto"
                                                         src="Images_2/Image_Team_DSO_Accounts_call_Today_2019.png"
                                                         alt="Team Support">
                                                 </div>
