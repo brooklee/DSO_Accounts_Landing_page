@@ -567,7 +567,44 @@
                         </nav>
                     </div> -->
 
-                        <style>
+                     <!-- modal header Scripts and Styles -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+                        <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+                        />
+
+                                            <style>
+                                                /* Modal Styles Start */
+                                                .button-modal {
+                                border-radius: 2px;
+                                color: #ffffff;
+                                border: 1px solid #e35205;
+                                background: #e35205;
+                                font-size: 16px;
+                                width: 100%;
+                                max-width: 160px;
+                                cursor: pointer;
+                                padding: .6em 1.2em;
+                                margin: 1em 0;
+                                text-decoration: none;
+                                transition: opacity .35s ease-out, background-color .35s ease-out;
+                                font-weight: 400;
+                                user-select: none;
+                            }
+
+                            .button-modal:hover {
+                                border-color: #fa6212;
+                                background-color: #fa6212;
+                            }
+
+                            #styled {
+                                display: none;
+                                border-radius: 0;
+                            }
+                            /* Modal Styles End */
+
                             .video-outer-wrapper-large {
                                 width: 100%;
                                 max-width: 750px;
@@ -608,6 +645,7 @@
                                 border: 1px solid #fff;
                                 width: 75%;
                             }
+
                             /* Hero Animation */
                             .hero h1 {
                                 padding-top: 20px;
@@ -618,7 +656,8 @@
                                 animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1)
                             }
 
-                            .hero h2 , .hero p{
+                            .hero h2,
+                            .hero p {
                                 animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
                                 opacity: 0;
                             }
@@ -635,6 +674,7 @@
 
                                 }
                             }
+
                             /* End Hero Animation */
                             .white_arches {
                                 position: absolute;
@@ -670,7 +710,7 @@
                             .pin_bottom {
                                 position: absolute;
                                 bottom: 0px;
-                                
+
                                 width: 70%;
                                 max-width: 650px;
                             }
@@ -678,7 +718,7 @@
                             .pin_bottom_team {
                                 position: absolute;
                                 bottom: 0px;
-                                left:0;
+                                left: 0;
                                 width: 100%;
                                 max-width: 650px;
                             }
@@ -697,47 +737,51 @@
                                 transform: scale(1.1, 1.1);
                             }
 
-                            .we_can_help_section{
+                            .we_can_help_section {
                                 background-image: url(https://images.ctfassets.net/wfptrcrbtkd0/6gyrVttd7NvhZsSrWwG7jj/0f15c8f1b927ddf68958118dff8fb5ec/Image_Arches_DSO_Accounts_We_Can_Help_Mobile_BackGroung_2019.jpg);
                                 min-height: 400px;
-                                padding-top:150px 
+                                padding-top: 150px
                             }
 
-                            .from_us_section img{
-                                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            .from_us_section img {
+                                -webkit-filter: grayscale(100%);
+                                /* Safari 6.0 - 9.0 */
                                 filter: grayscale(100%);
                                 -webkit-transition: width 2s;
                                 /* For Safari 3.1 to 6.0 */
                                 transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
                             }
 
-                            .from_us_section img:hover{
-                                -webkit-filter: none; /* Safari 6.0 - 9.0 */
+                            .from_us_section img:hover {
+                                -webkit-filter: none;
+                                /* Safari 6.0 - 9.0 */
                                 filter: none;
                                 transform: scale(1.1, 1.1);
                             }
 
-                            .benifits_section img{
+                            .benefits_section img {
                                 -webkit-transition: width 2s;
                                 /* For Safari 3.1 to 6.0 */
                                 transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
                             }
 
-                            .benifits_section img:hover{
-                                -webkit-filter: none; /* Safari 6.0 - 9.0 */
+                            .benefits_section img:hover {
+                                -webkit-filter: none;
+                                /* Safari 6.0 - 9.0 */
                                 filter: none;
                                 transform: scale(1.1, 1.1);
                             }
-                            
+
 
                             .product_logos {
-                                width: 175px;
+                                width: 200px;
                             }
 
-                            .benifits_icon {
+                            .benefits_icon {
                                 max-height: 150px;
                             }
-                            .light_gray_Mountains{
+
+                            .light_gray_Mountains {
                                 position: absolute;
                                 bottom: 0px;
                                 left: 0;
@@ -750,50 +794,50 @@
                             } */
                             /* Medium Screens*/
                             @media screen and (min-width: 750px) {
-                                .we_can_help_section{
-                                background-image: url(https://images.ctfassets.net/wfptrcrbtkd0/5Xz6iVhldRObDDz1LyW4EW/882cd958b52d8f691a6bc84b0a4629fe/Image_Arches_DSO_Accounts_We_Can_Help_BackGroung_2019.jpg )
-                            }
+                                .we_can_help_section {
+                                    background-image: url(https://images.ctfassets.net/wfptrcrbtkd0/5Xz6iVhldRObDDz1LyW4EW/882cd958b52d8f691a6bc84b0a4629fe/Image_Arches_DSO_Accounts_We_Can_Help_BackGroung_2019.jpg )
+                                }
 
-                            .hero h1 {
-                                padding-top: 20%;  
-                            }
+                                .hero h1 {
+                                    padding-top: 20%;
+                                }
 
-                            .pin_bottom_right {
-                                position: absolute;
-                                bottom: 0px;
-                                left: 40%;
-                                width: 70%;
-                                max-width: 600px;
-                            }
+                                .pin_bottom_right {
+                                    position: absolute;
+                                    bottom: 0px;
+                                    left: 40%;
+                                    width: 70%;
+                                    max-width: 600px;
+                                }
 
                             }
 
                             @media screen and (min-width: 850px) {
                                 .video-outer-wrapper {
                                     margin: 75px auto 75px
-                                    
                                 }
 
                                 .pin_bottom_right {
-                                position: absolute;
-                                bottom: 0px;
-                                left: 40%;
-                                width: 70%;
-                                max-width: 600px;
-                            }
+                                    position: absolute;
+                                    bottom: 0px;
+                                    left: 40%;
+                                    width: 70%;
+                                    max-width: 600px;
+                                }
                             }
 
                             @media screen and (min-width: 850px) {
                                 .pin_bottom_right {
-                                position: absolute;
-                                bottom: 0px;
-                                left: 40%;
-                                width: 70%;
-                                max-width: 800px;
+                                    position: absolute;
+                                    bottom: 0px;
+                                    left: 40%;
+                                    width: 70%;
+                                    max-width: 800px;
                                 }
                             }
                         </style>
 
+                    
                         <div class="pb-8 text-base h-full bg-white">
 
                             <div id="body-content" class="body-content" style="margin-bottom: 0; padding-bottom:0 ">
@@ -807,8 +851,7 @@
                                 <div class="md:pt-16 pt-4 pb-16 bg-grey-darkest bg-cover bg-center bg-no-repeat"
                                     style="background-image: url('https://images.ctfassets.net/wfptrcrbtkd0/5RlktW2Ps0wv9exJU52hnl/08bba5d81731dcb67e9bc4bf55a570ee/Image_Arches_DSO_Accounts_Hero_BackGroung_2019.jpg'); position: relative;">
                                     <div class="w-max mx-auto">
-                                        <div class="space-content hero"
-                                        style="min-height: 600px">
+                                        <div class="space-content hero" style="min-height: 600px">
                                             <div class="w-full md:w-1/2 float-none sm:float-left px-4 pt-8 pb-0 mx-0 hidden md:block"
                                                 style="min-height: 500px;">
                                                 <div>
@@ -823,17 +866,24 @@
                                                     <h1
                                                         class="text-3xl sm:text-4xl font-light text-white font-sans leading-none text-center mb-4 headers">
                                                         We Can <wbr>Support You</h1>
-                                                    <p
-                                                        class="text-base text-left  text-white leading-normal font-normal mb-1">
-                                                        Is your group getting larger? Ultradent DSO has a vast network of support for you to draw on. Reliable quality products and a dedicated support staff, specially trained to accommodate large groups, will bring clinicians to stay—not to mention patients. Ultradent DSO will also keep your clinicians in the best of ADA CERP recognized Continued Education (CE)                                                        <br>
-                                                    <p
-                                                        class="text-base text-left  text-white leading-normal font-normal mb-1">
-                                                        Call today to learn more</p>
-                                                    <p
-                                                    class="text-xl text-left text-white leading-normal font-normal mb-1">
-                                                        <a href="tel:800-793-5215" class="text-white">800.793.5215</a>
-                                                    </p>
-                                                        
+                                                        <p
+                                                            class="text-base text-left font-thin text-white leading-normal font-normal mb-1">
+                                                            Is your group getting larger? Ultradent DSO has a vast
+                                                            network of support for you to draw on. Reliable quality
+                                                            products and a dedicated support staff, specially trained to
+                                                            accommodate large groups, will bring clinicians to stay—not
+                                                            to mention patients. Ultradent DSO will also keep your
+                                                            clinicians in the best of ADA CERP recognized Continued
+                                                            Education (CE) <br>
+                                                            <p
+                                                                class="text-lg text-left font-thin text-white leading-normal font-normal mb-1">
+                                                                Call today to learn more</p>
+                                                            <p
+                                                                class="text-2xl text-left text-white font-thin leading-normal font-normal mb-1">
+                                                                <a href="tel:800-793-5215"
+                                                                    class="text-white">800.793.5215</a>
+                                                            </p>
+
                                                 </div>
                                             </div>
 
@@ -870,89 +920,84 @@
                                 <!-- **************** -->
                                 <!-- **************** -->
                                 <div class="py-8 bg-grey-white from_us_section" style="background-color: #fff">
-                                        <div class="max-w-lg mx-auto py-8 ">
-                                            <div class="space-content flex flex-col justify-center">
-                                                <h2 class="text-3xl font-thin font-sans leading-none text-center mb-4">Who is Ultradent Products, Inc.?</h2>
-                                                <h3 class="text-2xl font-thin font-sans leading-none text-center mb-4">You May Know us as the Creators of:</h3>
+                                    <div class="max-w-lg mx-auto py-8 ">
+                                        <div class="space-content flex flex-col justify-center">
+                                            <h2 class="text-3xl font-thin font-sans leading-none text-center mb-4">Who
+                                                is Ultradent Products, Inc.?</h2>
+                                            <h3 class="text-2xl font-thin font-sans leading-none text-center mb-4">You
+                                                May Know us as the Creators of:</h3>
+                                        </div>
+                                    </div>
+                                    <div class="w-max mx-auto pb-8">
+                                        <div class="space-content">
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8 mx-0">
+                                                <div>
+                                                    <img class="mx-auto mb-2 product_logos block"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/517hB8hjD6qEG3DErtBvcs/2d26e390a542ede5426ab304ae3ff446/logo_Opalescence_Go_TM_2019.svg"
+                                                        alt="Online Portal">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
+                                                <div>
+                                                    <img class="mx-auto mb-2 product_logos block"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/6iaUpw52aMCw4EwpAxc47Z/a4ff75c222e5e75c03a11cc2ee501779/Opalescence_logo_2019_TM.svg"
+                                                        alt="Online Portal">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
+                                                <div>
+                                                    <img class="mx-auto mb-2 block"
+                                                        style="width:275px;"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/10Z7X7CujcWMWYAKaICEK2/c0b7a14b82f94b272ece724ab9ac0ecf/Logo_Opalescence_Boost.svg"
+                                                        alt="Online Portal">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="w-max mx-auto pb-8">
-                                                <div class="space-content">
-                                                    <div
-                                                        class="w-full md:w-1/4 lg:w-1/4 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8 mx-0">
-                                                        <div>
-                                                            <img class="mx-auto mb-2 product_logos block"
-                                                                src="https://images.ctfassets.net/wfptrcrbtkd0/1nY51T9q9nYZcoPfS5w8A6/3422153ca68f5111c9cbc7c1f7cb1903/Valo_logo_2019_TM.svg"
-                                                                alt="Online Portal">
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="w-full md:w-1/4 lg:w-1/4 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
-                                                        <div>
-                                                            <img class="mx-auto mb-2 product_logos block"
-                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/6iaUpw52aMCw4EwpAxc47Z/a4ff75c222e5e75c03a11cc2ee501779/Opalescence_logo_2019_TM.svg"
-                                                            alt="Online Portal">
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="w-full md:w-1/4 lg:w-1/4 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
-                                                        <div>
-                                                            <img class="mx-auto mb-2 product_logos block"
-                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/1WQAhX8SlgbVxU2SfzaDw0/5f1592b191d108507f33ee514507696e/Logo_Ultraquick_Enamelast_Q3_HomePage_Banner_Main_Q3_2019.svg"
-                                                            alt="Online Portal">
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="w-full md:w-1/4 lg:w-1/4 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
-                                                        <div>
-                                                            <img class="mx-auto mb-2 product_logos block"
-                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/10Z7X7CujcWMWYAKaICEK2/c0b7a14b82f94b272ece724ab9ac0ecf/Logo_Opalescence_Boost.svg"
-                                                            alt="Online Portal">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full clearfix">
-                                                </div>
-                                            </div>
-        
-                                            <div class="w-max mx-auto pb-8">
-                                                <div class="space-content">
-                                                    <div
-                                                        class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8 mx-0">
-                                                        <div>
-                                                            <img class="mx-auto mb-2 product_logos block"
-                                                                src="https://images.ctfassets.net/wfptrcrbtkd0/YZrJCv3MyviYVgXnmynsx/cbddff3e3161c78349f5616dd49bc738/Gemini_logo_2019_TM.svg"
-                                                                alt="Online Portal">
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
-                                                        <div>
-                                                            <img class="mx-auto mb-2 product_logos block"
-                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/18zoTSJj3kWyAhoPk9VXfB/2d21828bcf2a58778edaa3eb7c65ad73/Jiffy_logo_2019_TM.svg"
-                                                            alt="Online Portal">
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
-                                                        <div>
-                                                            <img class="mx-auto mb-2 product_logos block"
-                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/517hB8hjD6qEG3DErtBvcs/2d26e390a542ede5426ab304ae3ff446/logo_Opalescence_Go_TM_2019.svg"
-                                                            alt="Online Portal">
-                                                        </div>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="w-full clearfix">
-                                                </div>
-                                            </div>
+                                        <div class="w-full clearfix">
+                                        </div>
                                     </div>
-                                    <!-- **************** -->
-                                    <!-- **************** -->
-                                    <!-- End "from the 
+
+                                    <div class="w-max mx-auto pb-8">
+                                        <div class="space-content">
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8 mx-0">
+                                                <div>
+                                                    <img class="mx-auto mb-2 product_logos block"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/YZrJCv3MyviYVgXnmynsx/cbddff3e3161c78349f5616dd49bc738/Gemini_logo_2019_TM.svg"
+                                                        alt="Online Portal">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
+                                                <div>
+                                                    <img class="mx-auto mb-2 product_logos block"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/1WQAhX8SlgbVxU2SfzaDw0/5f1592b191d108507f33ee514507696e/Logo_Ultraquick_Enamelast_Q3_HomePage_Banner_Main_Q3_2019.svg"
+                                                        alt="Enamelast">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
+                                                <div>
+                                                    <img class="mx-auto mb-2 product_logos block"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/1nY51T9q9nYZcoPfS5w8A6/3422153ca68f5111c9cbc7c1f7cb1903/Valo_logo_2019_TM.svg"
+                                                        alt="Valo">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="w-full clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- **************** -->
+                                <!-- **************** -->
+                                <!-- End "from the 
                                     makers of" Section -->
-                                    <!-- **************** -->
-                                    <!-- **************** -->
+                                <!-- **************** -->
+                                <!-- **************** -->
 
                                 <!-- **************** -->
                                 <!-- **************** -->
@@ -962,24 +1007,24 @@
                                 <div class="py-8 bg-grey-white">
                                     <div class="max-w-md mx-auto py-8 ">
                                         <div class="bg-white bg-contain bg-left bg-no-repeat"
-                                        style="background-image: url('https://images.ctfassets.net/wfptrcrbtkd0/4M7oOHLIidHmCs1DHXdJNX/ad68d5dabecbc5196cd74c694759b213/Icon_Quote_Icon_DSO_Accounts_Quotes_Background_2019.svg'); min-height: 100px;">
-                                        <h2
-                                            class="text-3xl font-thin font-sans leading-none text-center mb-2">
-                                            Join Our Satisfied Customers</h2>
+                                            style="background-image: url('https://images.ctfassets.net/wfptrcrbtkd0/4M7oOHLIidHmCs1DHXdJNX/ad68d5dabecbc5196cd74c694759b213/Icon_Quote_Icon_DSO_Accounts_Quotes_Background_2019.svg'); min-height: 100px;">
+                                            <h2 class="text-3xl font-thin font-sans leading-none text-center mb-2">
+                                                Join Our Satisfied Customers</h2>
                                         </div>
-                                </div>
+                                    </div>
                                     <div class="w-max mx-auto pb-8">
                                         <div class="space-content">
 
-                                                <div class="hidden lg:block lg:w-1/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16"></div>
+                                            <div
+                                                class="hidden lg:block lg:w-1/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16">
+                                            </div>
 
                                             <div class="w-full lg:w-3/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16"
                                                 style="min-height: 500px;">
                                                 <div>
-                                                  
+
                                                     <div class="quote_box">
-                                                        <img class="mx-auto mb-2 block"
-                                                        style="width:300px"
+                                                        <img class="mx-auto mb-2 block" style="width:300px"
                                                             src="https://images.ctfassets.net/wfptrcrbtkd0/2nxzaN69ZsmzD2UDkHzNUI/5fef09916bed9cddcb538c61e55453f8/Logo_Heartland_Dental_DSO_Accounts_Hero_2019.svg">
                                                         <p
                                                             class="text-base text-left italic leading-normal font-normal mb-1">
@@ -1008,8 +1053,10 @@
                                                 </div>
                                             </div>
 
-                                            <div class="hidden lg:block lg:w-1/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16"></div>
-                                            
+                                            <div
+                                                class="hidden lg:block lg:w-1/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16">
+                                            </div>
+
                                         </div>
                                         <div class="w-full clearfix">
                                         </div>
@@ -1033,15 +1080,16 @@
                                             <div class="w-full md:w-1/3 float-none sm:float-left px-4">
                                                 <div>
                                                     <h2
-                                                    class="text-lg lg:text-xl font-light text-white font-sans leading-none text-center mb-4">
-                                                    Call today to Learn More</h2>
+                                                        class="text-2xl lg:text-2xl font-light text-white font-sans leading-none text-center mb-4">
+                                                        Call today to Learn More</h2>
                                                     <h1
-                                                        class="text-2xl lg:text-3xl font-light text-white font-sans leading-none text-center mb-4 pt-2 ">
+                                                        class="text-3xl lg:text-3xl font-light text-white font-sans leading-none text-center mb-4 pt-2 ">
                                                         800.793.5215</h1>
-                                                    
+
                                                 </div>
                                             </div>
-                                            <div class="w-full sm:w-2/3 float-none sm:float-left pb-0 mb-0 mx-0 hidden md:block">
+                                            <div
+                                                class="w-full sm:w-2/3 float-none sm:float-left pb-0 mb-0 mx-0 hidden md:block">
                                                 <div>
                                                     <img class="mx-auto pin_bottom_right"
                                                         src="https://images.ctfassets.net/wfptrcrbtkd0/5L2geM83qFjmhbUenx8F2f/6c3c500032f21c5e1a2689698b6aa6d7/Image_Team_DSO_Accounts_call_Today_2019.png"
@@ -1071,21 +1119,22 @@
                                 <!-- **************** -->
 
 
-                                
+
 
                                 <!-- **************** -->
                                 <!-- **************** -->
-                                <!-- Start "Benifits" Section -->
+                                <!-- Start "benefits" Section -->
                                 <!-- **************** -->
                                 <!-- **************** -->
-                                <div class="py-8 bg-grey-white benifits_section">
+                                <div class="py-8 bg-grey-white benefits_section">
                                     <div class="max-w-md mx-auto py-8 ">
                                         <div class="space-content flex flex-col justify-center">
                                             <h2 class="text-3xl font-thin font-sans leading-none text-center mb-4">
-                                                Benifits of Joining</h2>
-                                                <h2
-                                                        class="text-lg lg:text-xl font-light font-sans leading-none text-center mb-4">
-                                                        Your large group can feel backed and therefore confident when partnered with Ultradent’s resources:</h2>
+                                                    Benefits of Joining</h2>
+                                            <h2
+                                                class="text-lg lg:text-xl font-light font-sans leading-none text-center mb-4">
+                                                Your large group can feel backed and therefore confident when partnered
+                                                with Ultradent’s resources:</h2>
                                         </div>
                                     </div>
                                     <div class="w-max mx-auto pb-8">
@@ -1093,7 +1142,7 @@
                                             <div
                                                 class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8 mx-0">
                                                 <div>
-                                                    <img class="mx-auto mb-2 benifits_icon block"
+                                                    <img class="mx-auto mb-2 benefits_icon block"
                                                         src="https://images.ctfassets.net/wfptrcrbtkd0/1RMIjNEeqZZ0jE4KUXAPGL/e4b7a9f26fa59fad9f203ae117ced66c/Icon_Online_Portal_DSO_Accounts_2019.svg"
                                                         alt="Online Portal">
                                                     <p
@@ -1104,7 +1153,7 @@
                                             <div
                                                 class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
                                                 <div>
-                                                    <img class="mx-auto mb-2 benifits_icon block"
+                                                    <img class="mx-auto mb-2 benefits_icon block"
                                                         src="https://images.ctfassets.net/wfptrcrbtkd0/4sYfXoXf1JtHadMAQpLtSr/77e52c40128090e0708363511a68e801/Icon_Sale_Support_DSO_Accounts_2019.svg"
                                                         alt="Sales Support">
                                                     <p
@@ -1115,12 +1164,13 @@
                                             <div
                                                 class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
                                                 <div>
-                                                    <img class="mx-auto mb-2 benifits_icon block"
+                                                    <img class="mx-auto mb-2 benefits_icon block"
                                                         src="https://images.ctfassets.net/wfptrcrbtkd0/5El1zduu4wN9ZyM5VwSMp2/4efebe29abdfd358bc6aec6211c65b1d/Icon_Dedicated_Phone_DSO_Accounts_2019.svg"
                                                         alt="Specialized Support">
                                                     <p
                                                         class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
-                                                        Dedicated customer service staff and phone number for DSO accounts</p>
+                                                        Dedicated customer service staff and phone number for DSO
+                                                        accounts</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1129,137 +1179,143 @@
                                     </div>
 
                                     <div class="w-max mx-auto pb-8">
+                                        <div class="space-content">
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8 mx-0">
+                                                <div>
+                                                    <img class="mx-auto mb-2 benefits_icon block"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/KSlaSRzYpa7bHXHmox2Jk/39b774278e62dd4c61bfe8ee9d5c6e87/Icon_24-hr_Order_DSO_Accounts_2019.svg"
+                                                        alt="Online Portal">
+                                                    <p
+                                                        class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
+                                                        24-hour order efficiency</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
+                                                <div>
+                                                    <img class="mx-auto mb-2 benefits_icon block"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/3fHB31N9SpCl3aEqlB7tLl/30472faa735dea8fdbf465e25ce1a6d3/Icon_Pricing_DSO_Accounts_2019.svg"
+                                                        alt="Discount Bulk Pricing">
+                                                    <p
+                                                        class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
+                                                        Volume discount pricing</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
+                                                <div>
+                                                    <img class="mx-auto mb-2 benefits_icon block"
+                                                        src="https://images.ctfassets.net/wfptrcrbtkd0/5lXshzDrN73jFBn5RNWtUD/d1c2b1de051e66a380378d7e79ecf83c/Icon_Local_Support_DSO_Accounts_2019.svg?h=250"
+                                                        alt="Local Support">
+                                                    <p
+                                                        class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
+                                                        Potential CE support for clinicians within the group</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-max mx-auto pb-8">
                                             <div class="space-content">
                                                 <div
                                                     class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8 mx-0">
                                                     <div>
-                                                        <img class="mx-auto mb-2 benifits_icon block"
-                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/KSlaSRzYpa7bHXHmox2Jk/39b774278e62dd4c61bfe8ee9d5c6e87/Icon_24-hr_Order_DSO_Accounts_2019.svg"
-                                                            alt="Online Portal">
+                                                        <img class="mx-auto mb-2 benefits_icon block"
+                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/6ssOsqIy6ILetvX9MKAm0j/6ed83b0c46bd7fd1643baf308be2382e/Icon_Seminars_DSO_Accounts_2019.svg"
+                                                            alt="Seminars">
                                                         <p
                                                             class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
-                                                            24-hour order efficiency</p>
+                                                            40% OFF Ultradent sponsored local seminars</p>
                                                     </div>
                                                 </div>
                                                 <div
                                                     class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
                                                     <div>
-                                                        <img class="mx-auto mb-2 benifits_icon block"
-                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/3fHB31N9SpCl3aEqlB7tLl/30472faa735dea8fdbf465e25ce1a6d3/Icon_Pricing_DSO_Accounts_2019.svg"
-                                                            alt="Discount Bulk Pricing">
+                                                        <img class="mx-auto mb-2 benefits_icon block"
+                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/6O8rXS2VFiJU1BgxY4vdDa/0d10a35546426227cdf2741ce9cb4380/Icon_Secialized_Service_DSO_Accounts_2019.svg"
+                                                            alt="Sales Support">
                                                         <p
                                                             class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
-                                                            Volume discount pricing</p>
+                                                            Customized reporting available for annual product usage</p>
                                                     </div>
                                                 </div>
                                                 <div
                                                     class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
                                                     <div>
-                                                        <img class="mx-auto mb-2 benifits_icon block"
-                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/5lXshzDrN73jFBn5RNWtUD/d1c2b1de051e66a380378d7e79ecf83c/Icon_Local_Support_DSO_Accounts_2019.svg?h=250"
-                                                            alt="Local Support">
+                                                        <img class="mx-auto mb-2 benefits_icon block"
+                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/7mz1ubN2xCgjrHTqNkHVed/dc0e6fd3333ab8db5ce2904031e82df9/Icon_Free_Shipping_DSO_Accounts_2019.svg"
+                                                            alt="Specialized Support">
                                                         <p
                                                             class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
-                                                            Potential CE support for clinicians within the group</p>
+                                                            Free shipping on orders of $295 or more</p>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="w-max mx-auto pb-8">
-                                                    <div class="space-content">
-                                                        <div
-                                                            class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8 mx-0">
-                                                            <div>
-                                                                <img class="mx-auto mb-2 benifits_icon block"
-                                                                    src="https://images.ctfassets.net/wfptrcrbtkd0/6ssOsqIy6ILetvX9MKAm0j/6ed83b0c46bd7fd1643baf308be2382e/Icon_Seminars_DSO_Accounts_2019.svg"
-                                                                    alt="Seminars">
-                                                                <p
-                                                                    class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
-                                                                    40% OFF Ultradent sponsored local seminars</p>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
-                                                            <div>
-                                                                <img class="mx-auto mb-2 benifits_icon block"
-                                                                    src="https://images.ctfassets.net/wfptrcrbtkd0/6O8rXS2VFiJU1BgxY4vdDa/0d10a35546426227cdf2741ce9cb4380/Icon_Secialized_Service_DSO_Accounts_2019.svg"
-                                                                    alt="Sales Support">
-                                                                <p
-                                                                    class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
-                                                                    Customized reporting available for annual product usage</p>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full md:w-1/3 lg:w-1/3 float-none sm:float-left px-4 pt-8 pb-0 lg:py-8">
-                                                            <div>
-                                                                <img class="mx-auto mb-2 benifits_icon block"
-                                                                    src="https://images.ctfassets.net/wfptrcrbtkd0/7mz1ubN2xCgjrHTqNkHVed/dc0e6fd3333ab8db5ce2904031e82df9/Icon_Free_Shipping_DSO_Accounts_2019.svg"
-                                                                    alt="Specialized Support">
-                                                                <p
-                                                                    class="text-lg text-center text-grey leading-normal font-normal px-8 lg:px-16 my-4">
-                                                                    Free shipping on orders of $295 or more</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="w-full clearfix">
-                                                    </div>
-                                                </div>
                                             <div class="w-full clearfix">
                                             </div>
                                         </div>
+                                        <div class="w-full clearfix">
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- **************** -->
                                 <!-- **************** -->
-                                <!-- End "Benifits" Section -->
+                                <!-- End "benefits" Section -->
                                 <!-- **************** -->
                                 <!-- **************** -->
 
-<!-- **************** -->
+                                <!-- **************** -->
                                 <!-- **************** -->
                                 <!-- Start Quotes Heartland Section -->
                                 <!-- **************** -->
                                 <!-- **************** -->
                                 <div class="py-8 bg-grey-white">
-                                        <div class="max-w-md mx-auto py-8 ">
-                                            <div class="bg-white bg-contain bg-left bg-no-repeat"
+                                    <div class="max-w-md mx-auto py-8 ">
+                                        <div class="bg-white bg-contain bg-left bg-no-repeat"
                                             style="background-image: url('https://images.ctfassets.net/wfptrcrbtkd0/4M7oOHLIidHmCs1DHXdJNX/ad68d5dabecbc5196cd74c694759b213/Icon_Quote_Icon_DSO_Accounts_Quotes_Background_2019.svg'); min-height: 100px;">
-                                            <h2
-                                                class="text-3xl font-thin font-sans leading-none text-center mb-2">
+                                            <h2 class="text-3xl font-thin font-sans leading-none text-center mb-2">
                                                 See What Others are Saying</h2>
-                                            </div>
-                                    </div>
-                                        <div class="w-max mx-auto pb-8">
-                                            <div class="space-content">
-    
-                                                    <div class="hidden lg:block lg:w-1/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16"></div>
-    
-                                                <div class="w-full lg:w-3/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16"
-                                                    style="min-height: 500px;">
-                                                    <div>
-                                                      
-                                                        <div class="quote_box">
-                                                            <img class="mx-auto mb-2 block"
-                                                            style="width:300px"
-                                                                src="https://images.ctfassets.net/wfptrcrbtkd0/6ERiEcZaBadfpKCSO0FlA6/6a0c1521fb5ad55dcd140d806cdc876b/Logo_Pacific_Dental_DSO_Accounts_Hero_2019.svg">
-                                                            <p
-                                                                class="text-base text-left italic leading-normal font-normal mb-1">
-                                                                “Ultradent is fully committed and cares about their strategic partners to ensure excellent products are produced for them and their patients. Ultradent provides excellent service through their local representatives and their inside Specialty Accounts Customer Service Team.”</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-    
-                                                <div class="hidden lg:block lg:w-1/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16"></div>
-                                                
-                                            </div>
-                                            <div class="w-full clearfix">
-                                            </div>
                                         </div>
                                     </div>
-                                    <!-- **************** -->
-                                    <!-- **************** -->
-                                    <!-- End Quotes Heartland Section -->
-                                    <!-- **************** -->
-                                    <!-- **************** -->
+                                    <div class="w-max mx-auto pb-8">
+                                        <div class="space-content">
+
+                                            <div
+                                                class="hidden lg:block lg:w-1/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16">
+                                            </div>
+
+                                            <div class="w-full lg:w-3/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16"
+                                                style="min-height: 500px;">
+                                                <div>
+
+                                                    <div class="quote_box">
+                                                        <img class="mx-auto mb-2 block" style="width:300px"
+                                                            src="https://images.ctfassets.net/wfptrcrbtkd0/6ERiEcZaBadfpKCSO0FlA6/6a0c1521fb5ad55dcd140d806cdc876b/Logo_Pacific_Dental_DSO_Accounts_Hero_2019.svg">
+                                                        <p
+                                                            class="text-base text-left italic leading-normal font-normal mb-1">
+                                                            “Ultradent is fully committed and cares about their
+                                                            strategic partners to ensure excellent products are produced
+                                                            for them and their patients. Ultradent provides excellent
+                                                            service through their local representatives and their inside
+                                                            Specialty Accounts Customer Service Team.”</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="hidden lg:block lg:w-1/5 float-none sm:float-left px-4 pt-8 pb-0 sm:py-8 mx-0 mb-16">
+                                            </div>
+
+                                        </div>
+                                        <div class="w-full clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- **************** -->
+                                <!-- **************** -->
+                                <!-- End Quotes Heartland Section -->
+                                <!-- **************** -->
+                                <!-- **************** -->
 
 
                                 <!-- **************** -->
@@ -1271,15 +1327,16 @@
                                     style="background-image: url('https://images.ctfassets.net/wfptrcrbtkd0/4FT4yGQzuZcNkmyOQ2T1Jh/ef0e8d3fb20b6c7038b70c5877ce4d5d/Image_Arches_DSO_Accounts_Learn_More_BackGroung_2019.png'); position: relative;">
                                     <div class="w-max mx-auto">
                                         <div class="space-content">
-                                            <div class="w-full md:w-1/2 float-none sm:float-left px-4 pt-8 pb-0 mx-0 hidden md:block">
+                                            <div
+                                                class="w-full md:w-1/2 float-none sm:float-left px-4 pt-8 pb-0 mx-0 hidden md:block">
                                                 <div>
                                                     <img class="mx-auto pin_bottom_left"
                                                         src="https://images.ctfassets.net/wfptrcrbtkd0/6hB2oo5Zr6kvf8uXR7882l/3724302eeb2e9542c0262ce40028f5e3/Image_Female_Operator_DSO_Accounts_Hero_2019.png"
                                                         alt="Phone Operator">
                                                 </div>
                                             </div>
-                                            <div class="w-full md:w-1/2 float-none sm:float-left px-4 pt-6 pb-0 sm:py-8"
-                                                >
+                                            <div
+                                                class="w-full md:w-1/2 float-none sm:float-left px-4 pt-6 pb-0 sm:py-8">
                                                 <div>
                                                     <h1
                                                         class="text-3xl md:text-4xl font-light text-white font-sans leading-none text-left mb-4">
@@ -1290,8 +1347,11 @@
 
                                                     <p
                                                         class="text-base text-left  text-white leading-normal font-normal mb-1">
-                                                        We know what makes a dental practice run smoothly and show a return oninvestment. Ultradent wants to help you care for your clinicians as well as your patients using reliable equipment, time-tested brands, CE, and dedicated service                                                        <br>
-                                                        
+                                                        We know what makes a dental practice run smoothly and show a
+                                                        return oninvestment. Ultradent wants to help you care for your
+                                                        clinicians as well as your patients using reliable equipment,
+                                                        time-tested brands, CE, and dedicated service <br>
+
                                                 </div>
                                             </div>
                                             <div class="w-full float-none sm:float-left px-4 pb-0 mx-0 md:hidden"
@@ -1307,11 +1367,11 @@
                                         </div>
                                         <div class="" style="width:100%">
 
-                                                <!-- <img class="mx-auto light_gray_Mountains"
+                                            <!-- <img class="mx-auto light_gray_Mountains"
                                                     src="Images_2/Image_Mountans_light_Gray_DSO_Accounts_Learn_More_Bootom_2019.svg"
                                                     alt="600x400 image"> -->
-    
-                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- **************** -->
@@ -1321,7 +1381,7 @@
                                 <!-- **************** -->
 
 
-                                 <!-- **************** -->
+                                <!-- **************** -->
                                 <!-- **************** -->
                                 <!-- Start Learn More Section -->
                                 <!-- **************** -->
@@ -1329,31 +1389,31 @@
                                 <div class="pt-16 bg-white bg-cover bg-center bg-no-repeat">
                                     <div class="w-max mx-auto">
                                         <div class="space-content">
-                                            <div class="w-full float-none sm:float-left px-4 pt-6 pb-0 sm:py-8"
-                                                >
+                                            <div class="w-full float-none sm:float-left px-4 pt-6 pb-0 sm:py-8">
                                                 <div>
-                                                        <h2
+                                                    <h2
                                                         class="text-2xl font-light text-grey font-sans leading-none text-center mb-4">
                                                         Call</h2>
                                                     <h1
                                                         class="text-3xl md:text-4xl font-light text-grey font-sans leading-none text-center text-left mb-4">
-                                                        <a href="tel:800-793-5215" >800.793.5215</a></h1>
-                                                        <h2
+                                                        <a href="tel:800-793-5215">800.793.5215</a></h1>
+                                                    <h2
                                                         class="text-2xl font-light text-grey font-sans leading-none text-center mb-4">
                                                         today to learn more.</h2>
+                                                        
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="w-full clearfix">
                                         </div>
                                         <div class="" style="width:100%">
 
-                                                <!-- <img class="mx-auto light_gray_Mountains"
+                                            <!-- <img class="mx-auto light_gray_Mountains"
                                                     src="Images_2/Image_Mountans_light_Gray_DSO_Accounts_Learn_More_Bootom_2019.svg"
                                                     alt="600x400 image"> -->
-    
-                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- **************** -->
@@ -1362,6 +1422,83 @@
                                 <!-- **************** -->
                                 <!-- **************** -->
 
+                                 <!-- Pop Up Modal -->
+    <div id="Pop-Up-Modal">
+            <h1>Do You Qualify as a Ultradent DSO</h1>
+            <hr />
+            <p>
+              I Have more than 5 practices and/or I employ at least 10 doctors
+            </p>
+            <br>
+            <br>
+            <a
+              href="#close"
+              rel="modal:close"
+              class="button-modal"
+              style="color: white"
+              >Yes</a
+            >
+            <!-- <a
+              href="https://www.ultradent.com/"
+              class="button-modal"
+              style="color: white"
+              >No</a
+            > -->
+
+            <button class="button" data-modal>No</button>
+          </div>
+
+          <!-- Pop Up Modal End -->
+
+          <div id="Pop-Up-Modal-2" class="hidden">
+                <h1>Uh oh!</h1>
+                <hr />
+                <p>
+                  It Looks like you don't qualify for a DSO Account with Ultradent.
+                  <br>
+                  But please check out some of our other awesome products.
+                </p>
+                <br>
+                <br>
+                <!-- <a
+                  href="#close"
+                  rel="modal:close"
+                  class="button-modal"
+                  style="color: white"
+                  >Learn about UltradentElite</a
+                > -->
+                <a
+                  href="https://www.ultradent.com/"
+                  class="button-modal"
+                  style="color: white"
+                  >Shop Ultradent</a
+                >
+                <br>
+                <br>
+              </div>
+      
+          <!-- Modal Script -->
+          <script type="text/javascript" charset="utf-8">
+            $("#Pop-Up-Modal").modal({
+              fadeDuration: 250,
+              clickClose: false,
+              showClose: false
+            });
+      
+            $("button[data-modal]").on("click", function() {
+              $("#Pop-Up-Modal").modal({ clickClose: false, showClose: false });
+            });
+
+            $("button[data-modal]").on("click", function() {
+              $("#Pop-Up-Modal-2").modal({ clickClose: false, showClose: false });
+            });
+      
+            $("button[data-modal='styled']").on("click", function() {
+              $("#styled").modal({ clickClose: false, showClose: false });
+            });
+
+          </script>
+          <!-- Modal Script End-->
 
 
                                 <!-- END #body-content -->
